@@ -12,18 +12,18 @@ class ArticlesController < ApplicationController
     @articles = Article.new
   end
   def edit
-    @articles = Article.find(params[:id])
+    #@articles = Article.find(params[:id])
   end
   def show
-    @articles = Article.find(params[:id])
+    #@articles = Article.find(params[:id])
   end
   def update
-    @articles = Article.find(params[:id])
+    #@articles = Article.find(params[:id])
     @articles.update(article_params)
     redirect_to article_path(@articles)
   end
   def destroy
-    @articles = Article.find(params[:id])
+    #@articles = Article.find(params[:id])
     @articles.destroy
     redirect_to articles_path
   end

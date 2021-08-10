@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 
+
 10.times{
   article = Article.new(title: Faker::Book.title,
   content: Faker::String.random)
